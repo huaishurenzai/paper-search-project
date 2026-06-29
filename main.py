@@ -42,11 +42,23 @@ def add_paper(papers):
         return
 
     authors = input("请输入作者，多个作者用逗号分隔：").strip()
+    if not authors:
+        print("作者不能为空")
+        return
+
     year = input("请输入发表年份：").strip()
     keywords = input("请输入关键词，多个关键词用逗号分隔：").strip()
+    if not keywords:
+        print("关键词不能为空")
+        return
+
     venue = input("请输入会议或期刊名称：").strip()
     if not year.isdigit():
         print("年份必须是数字：")
+        return
+    year = int(year)
+    if year < 1900 or year > 2026:
+        print("年份范围不合理")
         return
 
     paper={
