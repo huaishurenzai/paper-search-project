@@ -106,9 +106,10 @@ def search_papers(papers):
     for paper in papers:
         title = paper["title"].lower()
         authors = paper["authors"].lower()
+        year = str(paper["year"])
         keywords = " ".join(paper["keywords"]).lower()
 
-        if query in title or query in authors or query in keywords:
+        if query in title or query in authors or query in keywords or query in year:
             results.append(paper)
 
     if not results:
