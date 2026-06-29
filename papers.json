@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Attention is all you need",
+    "authors": "Vaswani",
+    "year": 2017,
+    "keywords": [
+      "Transformer",
+      "NLP",
+      "attention"
+    ]
+  },
+  {
+    "title": "segment anything",
+    "authors": "Meta AI",
+    "year": 2023,
+    "keywords": [
+      "cv",
+      "segmentation",
+      "foundation model"
+    ]
+  }
+]
