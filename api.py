@@ -89,7 +89,7 @@ def get_paper(paper_id: int):
 
     raise HTTPException(status_code=404, detail="Paper not found")
 
-@app.put("papers/{paper_id}")
+@app.put("/papers/{paper_id}")
 def update_paper(paper_id: int, paper: PaperUpdate):
     papers = load_papers()
 
@@ -110,7 +110,7 @@ def update_paper(paper_id: int, paper: PaperUpdate):
 
     raise HTTPException(status_code=404,detail="paper not found")
 
-@app.detele("/papers/{paper_id}")
+@app.delete("/papers/{paper_id}")
 def delete_paper(paper_id: int):
     papers = load_papers()
 
