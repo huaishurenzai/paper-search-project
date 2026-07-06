@@ -119,6 +119,6 @@ def delete_paper(paper_id: int):
             deleted_paper = papers.pop(index)
             save_papers(papers)
 
-            return {"message": "paper deteled", "paper": deleted_paper}
+            return {"message": "paper deleted", "paper": deleted_paper}
 
     raise HTTPException(status_code=404,detail="Paper not found")
