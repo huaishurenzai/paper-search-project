@@ -7,8 +7,7 @@
       "Transformer",
       "NLP",
       "attention"
-    ],
-    "id": 1
+    ]
   },
   {
     "title": "segment anything",
@@ -18,8 +17,7 @@
       "cv",
       "segmentation",
       "foundation model"
-    ],
-    "id": 2
+    ]
   },
   {
     "title": "Attention Is All You Need",
@@ -29,8 +27,7 @@
       "Transformer",
       "attention",
       "NLP"
-    ],
-    "id": 3
+    ]
   },
   {
     "title": "Attention Is All You Need",
@@ -40,8 +37,7 @@
       "Transformer",
       "attention",
       "NLP"
-    ],
-    "id": 4
+    ]
   },
   {
     "title": "Vision-Language Agent for Scientific Paper Understanding",
@@ -52,8 +48,7 @@
       "vision-language model",
       "paper understanding",
       "multimodal"
-    ],
-    "id": 5
+    ]
   },
   {
     "title": "Retrieval-Augmented Generation for Computer Vision Literature Search",
@@ -64,8 +59,7 @@
       "computer vision",
       "retrieval",
       "literature search"
-    ],
-    "id": 6
+    ]
   },
   {
     "title": "A Survey on Multimodal Large Language Models",
@@ -76,8 +70,7 @@
       "large language model",
       "survey",
       "VLM"
-    ],
-    "id": 7
+    ]
   },
   {
     "title": "Underwater Image Enhancement with Transformer Networks",
@@ -88,8 +81,7 @@
       "image enhancement",
       "transformer",
       "computer vision"
-    ],
-    "id": 8
+    ]
   },
   {
     "title": "Tool-Augmented Agents for Visual Question Answering",
@@ -100,8 +92,7 @@
       "VQA",
       "tool use",
       "visual reasoning"
-    ],
-    "id": 9
+    ]
   },
   {
     "title": "Efficient Object Detection in Low-Light Environments",
@@ -112,8 +103,7 @@
       "low-light",
       "YOLO",
       "computer vision"
-    ],
-    "id": 10
+    ]
   },
   {
     "title": "Memory-Based Planning for Autonomous AI Agents",
@@ -124,8 +114,7 @@
       "memory",
       "planning",
       "LLM"
-    ],
-    "id": 11
+    ]
   },
   {
     "title": "Cross-Modal Retrieval for Image and Text Matching",
@@ -136,8 +125,7 @@
       "image-text matching",
       "CLIP",
       "multimodal"
-    ],
-    "id": 12
+    ]
   },
   {
     "title": "Robust Semantic Segmentation for Marine Scenes",
@@ -148,8 +136,7 @@
       "marine scene",
       "underwater vision",
       "deep learning"
-    ],
-    "id": 13
+    ]
   },
   {
     "title": "Evaluation Methods for Retrieval-Augmented AI Systems",
@@ -160,8 +147,7 @@
       "RAG",
       "retrieval",
       "AI system"
-    ],
-    "id": 14
+    ]
   },
   {
     "title": "Lightweight Vision Transformers for Edge Deployment",
@@ -172,8 +158,7 @@
       "edge deployment",
       "lightweight model",
       "CV"
-    ],
-    "id": 15
+    ]
   },
   {
     "title": "Prompt Engineering for Multimodal Reasoning Tasks",
@@ -184,7 +169,6 @@
       "multimodal reasoning",
       "VLM",
       "LLM"
-    ],
-    "id": 16
+    ]
   }
 ]
