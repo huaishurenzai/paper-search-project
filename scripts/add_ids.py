@@ -1,8 +1,9 @@
 import json
 from pathlib import Path
 
-DATA_FILE = Path("papers.json")
-BACKUP_FILE = Path("papers_backup_before_add_id.json")
+BASE_DIR = Path(__file__).resolve().parent.parent
+DATA_FILE = BASE_DIR / "data" / "papers.json"
+BACKUP_FILE = BASE_DIR / "data" / "papers_backup_before_add_id_run.json"
 
 def main():
     if not DATA_FILE.exists():

@@ -186,5 +186,16 @@
       "LLM"
     ],
     "id": 16
+  },
+  {
+    "id": 17,
+    "title": "Vision-Language Agent for Scientific Paper Search",
+    "authors": "Li Wei, Wang Hao",
+    "year": 2024,
+    "keywords": [
+      "agent",
+      "vision-language model",
+      "paper search"
+    ]
   }
 ]

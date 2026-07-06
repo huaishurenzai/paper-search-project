@@ -6,7 +6,7 @@ from fastapi import HTTPException
 
 app = FastAPI()
 
-DATA_FILE = Path("papers.json")
+DATA_FILE = Path("data/papers.json")
 
 class PaperCreate(BaseModel):
     title: str

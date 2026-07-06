@@ -1,0 +1,174 @@
+[
+  {
+    "title": "Attention is all you need",
+    "authors": "Vaswani",
+    "year": 2017,
+    "keywords": [
+      "Transformer",
+      "NLP",
+      "attention"
+    ]
+  },
+  {
+    "title": "segment anything",
+    "authors": "Meta AI",
+    "year": 2023,
+    "keywords": [
+      "cv",
+      "segmentation",
+      "foundation model"
+    ]
+  },
+  {
+    "title": "Attention Is All You Need",
+    "authors": "Vaswani et al.",
+    "year": 2017,
+    "keywords": [
+      "Transformer",
+      "attention",
+      "NLP"
+    ]
+  },
+  {
+    "title": "Attention Is All You Need",
+    "authors": "Vaswani et al.",
+    "year": 2017,
+    "keywords": [
+      "Transformer",
+      "attention",
+      "NLP"
+    ]
+  },
+  {
+    "title": "Vision-Language Agent for Scientific Paper Understanding",
+    "authors": "Li Wei, Zhang Ming",
+    "year": 2024,
+    "keywords": [
+      "agent",
+      "vision-language model",
+      "paper understanding",
+      "multimodal"
+    ]
+  },
+  {
+    "title": "Retrieval-Augmented Generation for Computer Vision Literature Search",
+    "authors": "Chen Yu, Wang Hao",
+    "year": 2023,
+    "keywords": [
+      "RAG",
+      "computer vision",
+      "retrieval",
+      "literature search"
+    ]
+  },
+  {
+    "title": "A Survey on Multimodal Large Language Models",
+    "authors": "Liu Fang, Zhao Qiang",
+    "year": 2024,
+    "keywords": [
+      "multimodal",
+      "large language model",
+      "survey",
+      "VLM"
+    ]
+  },
+  {
+    "title": "Underwater Image Enhancement with Transformer Networks",
+    "authors": "Sun Rui, Huang Jie",
+    "year": 2022,
+    "keywords": [
+      "underwater image",
+      "image enhancement",
+      "transformer",
+      "computer vision"
+    ]
+  },
+  {
+    "title": "Tool-Augmented Agents for Visual Question Answering",
+    "authors": "Wang Lei, Xu Ning",
+    "year": 2025,
+    "keywords": [
+      "AI agent",
+      "VQA",
+      "tool use",
+      "visual reasoning"
+    ]
+  },
+  {
+    "title": "Efficient Object Detection in Low-Light Environments",
+    "authors": "Zhou Kai, Ma Lin",
+    "year": 2021,
+    "keywords": [
+      "object detection",
+      "low-light",
+      "YOLO",
+      "computer vision"
+    ]
+  },
+  {
+    "title": "Memory-Based Planning for Autonomous AI Agents",
+    "authors": "Yang Chen, Luo Xin",
+    "year": 2025,
+    "keywords": [
+      "AI agent",
+      "memory",
+      "planning",
+      "LLM"
+    ]
+  },
+  {
+    "title": "Cross-Modal Retrieval for Image and Text Matching",
+    "authors": "Zhang Yue, He Tao",
+    "year": 2023,
+    "keywords": [
+      "cross-modal retrieval",
+      "image-text matching",
+      "CLIP",
+      "multimodal"
+    ]
+  },
+  {
+    "title": "Robust Semantic Segmentation for Marine Scenes",
+    "authors": "Gao Yuan, Peng Shuai",
+    "year": 2022,
+    "keywords": [
+      "semantic segmentation",
+      "marine scene",
+      "underwater vision",
+      "deep learning"
+    ]
+  },
+  {
+    "title": "Evaluation Methods for Retrieval-Augmented AI Systems",
+    "authors": "Deng Xiao, Guo Han",
+    "year": 2024,
+    "keywords": [
+      "evaluation",
+      "RAG",
+      "retrieval",
+      "AI system"
+    ]
+  },
+  {
+    "title": "Lightweight Vision Transformers for Edge Deployment",
+    "authors": "Tang Bo, Lin Jia",
+    "year": 2023,
+    "keywords": [
+      "vision transformer",
+      "edge deployment",
+      "lightweight model",
+      "CV"
+    ]
+  },
+  {
+    "title": "Prompt Engineering for Multimodal Reasoning Tasks",
+    "authors": "Feng Yi, Jiang Nan",
+    "year": 2025,
+    "keywords": [
+      "prompt engineering",
+      "multimodal reasoning",
+      "VLM",
+      "LLM"
+    ]
+  }
+]
