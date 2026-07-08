@@ -6,6 +6,11 @@ from fastapi.testclient import TestClient
 import app.storage as storage
 from app.main import app
 
+def test_root(client):
+    response = client.get("/")
+
+    assert response.status_code == 200
+    assert response.json() == {"message": "paper search API"}
 
 @pytest.fixture
 def client(tmp_path, monkeypatch):
@@ -134,3 +139,12 @@ def test_create_paper_missing_title(client):
 
     response = client.post("/papers", json=invalid_paper)
     assert response.status_code == 422
+
+def test_search_papers(client):
+    response = client.get("/papers/search?keyword=transformer")
+
+    assert response.status_code == 200
+
+    data = response.json()
+    assert data["count"] == 1
+    assert data["results"][0]["title"] == "Attention Is All You Need"
