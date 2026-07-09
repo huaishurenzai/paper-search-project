@@ -10,7 +10,11 @@ def get_papers():
     return {"count": len(papers), "papers": papers}
 
 @router.get("/search")
-def search_papers(keyword:str):
+def search_papers(keyword: str):
+    keyword = keyword.strip()
+    if not keyword:
+        raise HTTPException(status_code=400,detail="keyword cannot be empty")
+
     papers = load_papers()
     results = []
 
@@ -19,7 +23,7 @@ def search_papers(keyword:str):
     for paper in papers:
         title = paper.get("title", "").lower()
         authors = paper.get("authors", "").lower()
-        keywords = "".join(paper.get("keywords",[])).lower()
+        keywords = " ".join(paper.get("keywords",[])).lower()
 
         if keyword in title or keyword in authors or keyword in keywords:
             results.append(paper)

@@ -148,3 +148,21 @@ def test_search_papers(client):
     data = response.json()
     assert data["count"] == 1
     assert data["results"][0]["title"] == "Attention Is All You Need"
+
+def test_create_paper_invalid_year(client):
+    invalid_paper = {
+        "title": "Invalid Paper",
+        "authors": "Someone",
+        "year": 1800,
+        "keywords": ["test"],
+    }
+
+    response = client.post("/papers",json=invalid_paper)
+
+    assert response.status_code == 422
+
+def test_search_papers_empty_keyword(client):
+    response = client.get("/papers/search?keyword=")
+
+    assert response.status_code == 400
+    assert response.json()["detail"] == "keyword cannot be empty"
