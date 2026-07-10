@@ -21,14 +21,17 @@ def search_papers(keyword: str):
     keyword = keyword.lower()
 
     for paper in papers:
-        title = paper.get("title", "").lower()
-        authors = paper.get("authors", "").lower()
-        keywords = " ".join(paper.get("keywords",[])).lower()
+        score,matched_fields = calculate_search_score(paper,keyword)
 
-        if keyword in title or keyword in authors or keyword in keywords:
-            results.append(paper)
+        if score > 0:
+            results.append({
+                "paper": paper,
+                "score": score,
+                "matched_fields": matched_fields,
+            })
+    results.sort(key=lambda item: item["score"], reverse=True)
 
-    return {"count": len(results),"results": results}
+    return {"count": len(results), "results": results}
 
 @router.post("")
 def create_paper(paper:PaperCreate):
@@ -87,3 +90,30 @@ def delete_paper(paper_id: int):
             return {"message": "paper deleted","paper": deleted_paper}
 
     raise HTTPException(status_code=404,detail="paper not found")
+
+def calculate_search_score(paper,keyword: str):
+    score = 0
+    matched_fields = []
+
+    title = paper.get("title", "").lower()
+    authors = paper.get("authors", "").lower()
+    year = str(paper.get("year", ""))
+    keywords = " ".join(paper.get("keywords", [])).lower()
+
+    if keyword in title:
+        score += 3
+        matched_fields.append("title")
+
+    if keyword in keywords:
+        score += 2
+        matched_fields.append("keywords")
+
+    if keyword in authors:
+        score += 1
+        matched_fields.append("authors")
+
+    if keyword in year:
+        score += 1
+        matched_fields.append("year")
+
+    return score, matched_fields

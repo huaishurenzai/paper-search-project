@@ -11,7 +11,9 @@
 - Pydantic 请求参数校验
 - pytest 接口测试
 - FastAPI 自动接口文档
-
+- 搜索结果相关性打分
+- 按匹配分数排序
+- 返回命中字段 matched_fields
 ## 项目结构
 
 ```text

@@ -147,7 +147,18 @@ def test_search_papers(client):
 
     data = response.json()
     assert data["count"] == 1
-    assert data["results"][0]["title"] == "Attention Is All You Need"
+    assert data["results"][0]["paper"]["title"] == "Attention Is All You Need"
+    assert data["results"][0]["score"] > 0
+    assert "keywords" in data["results"][0]["matched_fields"]
+
+def test_search_papers_rank_by_score(client):
+    response = client.get("/papers/search?keyword=attention")
+
+    assert response.status_code == 200
+
+    data = response.json()
+    assert data["count"] == 1
+    assert data["results"][0]["score"] >= 2
 
 def test_create_paper_invalid_year(client):
     invalid_paper = {
